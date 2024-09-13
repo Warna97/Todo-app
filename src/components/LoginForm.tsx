@@ -100,6 +100,16 @@ const LoginForm: React.FC = () => {
                 Login
               </Button>
             </Grid>
+            <Grid item xs={12} sx={{ textAlign: 'center' }}>
+              <Button
+                variant="text"
+                color="secondary"
+                size="small"
+                onClick={() => navigate('/signup')}
+              >
+                Don't have an account? Sign up
+              </Button>
+            </Grid>
           </Grid>
         </form>
         <Snackbar open={!!error} autoHideDuration={6000} onClose={() => setError(null)}>

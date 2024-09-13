@@ -33,7 +33,7 @@ const SignupForm: React.FC = () => {
       try {
         await signup(values.email, values.password, values.name);
         setSuccess('Registration successful! Redirecting to login...');
-        setTimeout(() => navigate('/login'), 3000); // Redirect after 3 seconds
+        setTimeout(() => navigate('/login'), 3000); 
       } catch (err) {
         if (err instanceof Error) {
           setError(err.message);
@@ -136,6 +136,17 @@ const SignupForm: React.FC = () => {
             <Grid item xs={12}>
               <Button type="submit" variant="contained" color="primary" fullWidth>
                 Signup
+              </Button>
+            </Grid>
+            <Grid item xs={12}>
+              <Button
+                variant="outlined"
+                color="secondary"
+                fullWidth
+                size="small"
+                onClick={() => navigate('/login')}
+              >
+                Already have an account? Login
               </Button>
             </Grid>
           </Grid>

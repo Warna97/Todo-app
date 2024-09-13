@@ -90,7 +90,7 @@ const TodoPage: React.FC = () => {
             color="primary"
             value={filter}
             exclusive
-            onChange={(event, newFilter) => setFilter(newFilter)}
+            onChange={(_event, newFilter) => setFilter(newFilter)}
             aria-label="task filtering"
           >
             <ToggleButton value="all" aria-label="all todos">

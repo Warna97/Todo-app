@@ -101,15 +101,20 @@ yarn lint
 
 ## Screenshots
 
-![mobile1](./screenshots/mobile1.jpeg)
-![mobile2](./screenshots/mobile2.jpeg)
-![mobile3](./screenshots/mobile3.jpeg)
-![mobile4](./screenshots/mobile4.jpeg)
+<p float="left">
+  <img src="screenshots/mobile1.jpeg" width="45%" />
+  <img src="screenshots/mobile2.jpeg" width="45%" />
+</p>
+<p float="left">
+  <img src="screenshots/mobile3.jpeg" width="45%" />
+  <img src="screenshots/mobile4.jpeg" width="45%" />
+</p>
 
-![Add Task](./screenshots/AddTask.png)
-![Edit Task](./screenshots/EditTask.png)
-![Login](./screenshots/Login.png)
-![Signup](./screenshots/Signup.png)
-![Todo List 1](./screenshots/TodoList1.png)
-![Todo List 2](./screenshots/TodoList2.png)
-![Todo List 3](./screenshots/TodoList3.png)
+<p float="left">
+  
+  <img src="screenshots/TodoList1.png" width="100%" />
+  <img src="screenshots/TodoList2.png" width="100%" />
+</p>
+<p float="left">
+  <img src="screenshots/TodoList3.png" width="100%" />
+</p>

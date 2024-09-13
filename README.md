@@ -1,50 +1,100 @@
-# React + TypeScript + Vite
+# Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Todo List application built using React, TypeScript, Vite, and Material UI. It allows users to add, edit, delete, and filter their tasks. The app also includes user authentication features using React Context and local storage.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow the instructions below to run the application locally on your machine.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Before you begin, make sure you have the following tools installed:
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/Warna97/Todo-app.git
+   cd todo-app
+    ```
+
+2. **Install dependencies**:
+
+   If you're using npm:
+
+   ```bash
+   npm install
+   ```
+
+   Or if you're using yarn:
+
+   ```bash
+   yarn install
+   ```
+
+3. **Run the development server**:
+
+   For npm:
+
+   ```bash
+   npm run dev
+   ```
+
+   For yarn:
+
+   ```bash
+   yarn dev
+   ```
+
+4. **Access the application**:
+
+   Open your browser and go to `http://localhost:5173` to view the application.
+
+### Build for Production
+
+To create a production build, run the following command:
+
+For npm:
+
+```bash
+npm run build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+For yarn:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+yarn build
 ```
+
+### Linting
+
+The project is set up with ESLint and Prettier for code linting and formatting. Run the following command to check for linting issues:
+
+For npm:
+
+```bash
+npm run lint
+```
+
+For yarn:
+
+```bash
+yarn lint
+```
+
+## Task Summary
+
+- **Todo List Feature**: Users can add, edit, delete, and mark tasks as complete.
+- **User Authentication**: Implemented using React Context and local storage. Users can sign up, log in, and log out.
+- **Task Popup**: Task creation and editing are done through modals for a better user experience.
+- **Task Filtering**: Added a filtering section to display "All," "Todo," and "Completed" tasks with the corresponding counts.
+- **React Context for Authentication**: Managed authentication and user state with React Context.
+- **Material UI**: Used Material UI components to ensure a consistent and easy-to-use interface.
+- **Persistent State**: Todos and authentication states are stored in local storage to maintain data between sessions.
+- **Built with Vite, React, and TypeScript**: Vite was chosen for fast build times, and React with TypeScript provided static type checking.
+- **Minimal Third-Party Libraries**: Limited use of third-party libraries to keep the project lightweight.
+- **ESLint**: Ensured code quality with linting.

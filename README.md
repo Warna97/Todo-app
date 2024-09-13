@@ -72,7 +72,7 @@ yarn build
 
 ### Linting
 
-The project is set up with ESLint and Prettier for code linting and formatting. Run the following command to check for linting issues:
+The project is set up with ESLint for code linting. Run the following command to check for linting issues:
 
 For npm:
 
@@ -98,3 +98,18 @@ yarn lint
 - **Built with Vite, React, and TypeScript**: Vite was chosen for fast build times, and React with TypeScript provided static type checking.
 - **Minimal Third-Party Libraries**: Limited use of third-party libraries to keep the project lightweight.
 - **ESLint**: Ensured code quality with linting.
+
+## Screenshots
+
+![mobile1](./screenshots/mobile1.jpeg)
+![mobile2](./screenshots/mobile2.jpeg)
+![mobile3](./screenshots/mobile3.jpeg)
+![mobile4](./screenshots/mobile4.jpeg)
+
+![Add Task](./screenshots/AddTask.png)
+![Edit Task](./screenshots/EditTask.png)
+![Login](./screenshots/Login.png)
+![Signup](./screenshots/Signup.png)
+![Todo List 1](./screenshots/TodoList1.png)
+![Todo List 2](./screenshots/TodoList2.png)
+![Todo List 3](./screenshots/TodoList3.png)
